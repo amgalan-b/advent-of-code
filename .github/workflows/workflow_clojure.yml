@@ -1,0 +1,16 @@
+# GitHub workflow for Clojure packages.
+---
+name: Build and test
+on: [push]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: lein deps
+      - name: Run tests
+        run: lein test
+      - name: Run checks
+        run: lein check
