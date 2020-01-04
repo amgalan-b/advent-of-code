@@ -1,5 +1,4 @@
-(ns advent-of-code.core
-  (:gen-class))
+(ns advent-of-code.day-1)
 
 (defn required-fuel
   [mass]
@@ -38,7 +37,3 @@
   (->> total-required-fuel
        (read-fuels)
        (reduce +)))
-
-(defn -main
-  [& args]
-  (total-fuel-requirements))
