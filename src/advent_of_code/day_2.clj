@@ -43,7 +43,7 @@
 
 (defn read-memory
   []
-  (-> "day_2/input.txt"
+  (-> "day_2.txt"
       (clojure.java.io/resource)
       (slurp)
       (clojure.string/split #",")

@@ -17,7 +17,7 @@
 
 (defn read-fuels
   [f]
-  (-> "day_1/input.txt"
+  (-> "day_1.txt"
       (clojure.java.io/resource)
       (slurp)
       (clojure.string/split-lines)
